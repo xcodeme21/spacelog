@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.spacelog.ui.theme.SpacelogTheme
+import com.example.spacelog.view.HomeView
 
 class HomeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,7 @@ class HomeActivity : ComponentActivity() {
         setContent {
             SpacelogTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    LoginView(modifier = Modifier.padding(innerPadding))
+                    HomeView(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
